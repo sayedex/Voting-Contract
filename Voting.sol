@@ -63,7 +63,7 @@ contract Voting {
 
         for (uint256 i = 0; i < count; i++) {
             if (proposala[i].voteCount > winningVoteCount) {
-                winningVoteCount = proposala[i].voteCount;
+                winningVoteCount = proposala[i].totalTokenVoted;
                 winningProposalID = i;
             }
         }
